@@ -12,6 +12,10 @@
 
     <link rel="stylesheet" href="assets/css/main.css" />
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
     <style>
 
         /* ============================= */
@@ -71,7 +75,7 @@
         }
 
         /* ============================= */
-        /* SECTION STYLE */
+        /* MAIN SECTIONS */
         /* ============================= */
 
         .main.special {
@@ -88,12 +92,12 @@
         #two h2,
         #three h2 {
 
-            color: #1e293b !important;
+            color: #111827 !important;
         }
 
         .content p {
 
-            color: #475569 !important;
+            color: #374151 !important;
 
             font-size: 1.1rem;
 
@@ -217,62 +221,73 @@
 
         #footer {
 
-    background:
-        linear-gradient(
-            135deg,
-            #020617,
-            #0f172a
-        ) !important;
-            color: #ffffff !important;
+            background:
+                linear-gradient(
+                    135deg,
+                    #020617,
+                    #0f172a
+                ) !important;
 
             padding-top: 80px;
+
+            color: white !important;
         }
+
+        /* ============================= */
+        /* GET IN TOUCH TEXT */
+        /* ============================= */
 
         #footer h2 {
 
-            color: #ffffff !important;
+            color: #000000 !important;
+
+            font-weight: 800 !important;
+
+            letter-spacing: 4px;
 
             font-size: 3rem;
 
-            letter-spacing: 4px;
+            opacity: 1 !important;
         }
 
         #footer p {
 
-            color: #f8fafc !important;
-
-            opacity: 1 !important;
+            color: #111827 !important;
 
             font-size: 1.1rem;
+
+            font-weight: 500;
+
+            opacity: 1 !important;
         }
 
         /* ============================= */
         /* CONTACT FORM */
         /* ============================= */
 
-       #footer input,
-#footer textarea {
+        #footer input,
+        #footer textarea {
 
-    background: rgba(255,255,255,0.20) !important;
+            background: #ffffff !important;
 
-            border: 1px solid rgba(255,255,255,0.2) !important;
+            border: 2px solid #38bdf8 !important;
 
-            border-radius: 15px !important;
+            border-radius: 18px !important;
 
-            color: #ffffff !important;
+            color: #000000 !important;
 
-            padding: 15px !important;
+            padding: 18px !important;
 
             font-size: 1rem !important;
 
-            opacity: 1 !important;
-
-            box-shadow: none !important;
+            box-shadow:
+                0 0 20px rgba(56,189,248,0.15);
         }
-    #footer input::placeholder,
-    #footer textarea::placeholder {
 
-    color: rgba(255,255,255,0.95) !important;
+        #footer input::placeholder,
+        #footer textarea::placeholder {
+
+            color: #6b7280 !important;
 
             opacity: 1 !important;
         }
@@ -280,21 +295,23 @@
         #footer textarea {
 
             resize: none;
+
+            min-height: 220px;
         }
 
         #footer input:focus,
         #footer textarea:focus {
 
-            border: 1px solid #38bdf8 !important;
-
-            background: rgba(255,255,255,0.18) !important;
+            border-color: #38bdf8 !important;
 
             box-shadow:
-                0 0 15px rgba(56,189,248,0.5) !important;
+                0 0 20px rgba(56,189,248,0.5) !important;
+
+            outline: none;
         }
 
         /* ============================= */
-        /* BUTTON */
+        /* SEND BUTTON */
         /* ============================= */
 
         #footer .primary {
@@ -314,9 +331,7 @@
 
             color: white !important;
 
-            font-weight: 600;
-
-            opacity: 1 !important;
+            font-weight: 700;
 
             transition: 0.4s ease;
         }
@@ -343,84 +358,20 @@
 
             color: #38bdf8 !important;
 
-            opacity: 1 !important;
-
             font-size: 1.8rem;
 
-            margin: 0 10px;
+            margin: 0 12px;
 
             transition: 0.3s ease;
         }
 
         .icons a:hover {
 
-            color: #ffffff !important;
+            color: white !important;
 
             transform: scale(1.2);
         }
 
-        /* ============================= */
-        /* FINAL VISIBILITY FIX */
-        /* ============================= */
-
-        #footer,
-        #footer .container,
-        #footer .content,
-        #footer header,
-        #footer form,
-        #footer p,
-        #footer h2,
-        #footer input,
-        #footer textarea,
-        #footer .actions,
-        #footer .icons,
-        #footer li,
-        #footer a {
-
-            opacity: 1 !important;
-        }
-
-       #footer p,
-#footer label {
-
-    color: #e2e8f0 !important;
-}
-
-#footer h2 {
-
-    color: #38bdf8 !important;
-
-    font-weight: 700 !important;
-
-    text-shadow:
-        0 0 15px rgba(56,189,248,0.35);
-}
-#footer input,
-#footer textarea {
-
-    background: #0f172a !important;
-
-    border: 2px solid #38bdf8 !important;
-
-    color: #ffffff !important;
-
-    opacity: 1 !important;
-
-    font-size: 1rem !important;
-
-    font-weight: 500 !important;
-
-    box-shadow:
-        0 0 20px rgba(56,189,248,0.25) !important;
-}
-
-#footer input::placeholder,
-#footer textarea::placeholder {
-
-    color: #cbd5e1 !important;
-
-    opacity: 1 !important;
-}
         /* ============================= */
         /* RESPONSIVE */
         /* ============================= */
@@ -542,35 +493,23 @@
             <ul class="icons-grid">
 
                 <li>
-
                     <span class="icon brands major fa-java"></span>
-
                     <h3>Java</h3>
-
                 </li>
 
                 <li>
-
                     <span class="icon brands major fa-android"></span>
-
                     <h3>Flutter</h3>
-
                 </li>
 
                 <li>
-
                     <span class="icon solid major fa-fire"></span>
-
                     <h3>Firebase</h3>
-
                 </li>
 
                 <li>
-
                     <span class="icon solid major fa-cloud"></span>
-
                     <h3>Cloud</h3>
-
                 </li>
 
             </ul>
@@ -603,11 +542,9 @@
                     <h3>✨ Life-Sync</h3>
 
                     <p>
-
-                        AI-powered Flutter productivity application featuring
-                        OCR scanning, smart notifications, cloud integration,
-                        Firebase backend, and modern UI experience.
-
+                        AI-powered Flutter productivity app with OCR scanning,
+                        Firebase backend, smart notifications,
+                        and cloud integration.
                     </p>
 
                     <span class="tech">Flutter • Firebase • OCR • AI</span>
@@ -619,14 +556,11 @@
                     <h3>💼 Job Portal</h3>
 
                     <p>
-
-                        Responsive job portal platform developed with
-                        modern frontend technologies for job searching,
-                        recruitment management, and user interaction.
-
+                        Responsive job portal platform with
+                        modern UI/UX and interactive frontend design.
                     </p>
 
-                    <span class="tech">TypeScript • Web App • UI/UX</span>
+                    <span class="tech">TypeScript • Web App</span>
 
                 </div>
 
@@ -635,14 +569,11 @@
                     <h3>📊 Student Grade Tracker</h3>
 
                     <p>
-
-                        Java GUI based academic management system for
-                        tracking student performance, analytics,
-                        grading records, and progress monitoring.
-
+                        Java GUI based academic management system
+                        for student performance tracking.
                     </p>
 
-                    <span class="tech">Java • Swing • GUI</span>
+                    <span class="tech">Java • Swing</span>
 
                 </div>
 
@@ -651,14 +582,11 @@
                     <h3>🌐 Portfolio Website</h3>
 
                     <p>
-
-                        Personal portfolio website showcasing projects,
-                        technical skills, certifications, and interactive
-                        modern web design with responsive animations.
-
+                        Modern responsive portfolio website with
+                        interactive animations and clean UI design.
                     </p>
 
-                    <span class="tech">HTML • CSS • JavaScript</span>
+                    <span class="tech">HTML • CSS • JS</span>
 
                 </div>
 
@@ -666,13 +594,14 @@
 
         </div>
 
-        <a href="#footer" class="goto-next scrolly">Next</a>
+        <a href="#footer"
+           class="goto-next scrolly">Next</a>
 
     </div>
 
 </section>
 
-<!-- Contact -->
+<!-- Footer -->
 <section id="footer">
 
     <div class="container">
@@ -690,6 +619,7 @@
 
         </p>
 
+        <!-- Contact Form -->
         <form method="post" action="#">
 
             <div class="row gtr-uniform">
@@ -698,7 +628,6 @@
 
                     <input type="text"
                            name="name"
-                           id="name"
                            placeholder="Name" />
 
                 </div>
@@ -707,7 +636,6 @@
 
                     <input type="email"
                            name="email"
-                           id="email"
                            placeholder="Email" />
 
                 </div>
@@ -715,7 +643,6 @@
                 <div class="col-12">
 
                     <textarea name="message"
-                              id="message"
                               placeholder="Message"
                               rows="6"></textarea>
 
@@ -741,6 +668,7 @@
 
         </form>
 
+        <!-- Social Icons -->
         <ul class="icons">
 
             <li>
@@ -756,7 +684,7 @@
 
             <li>
 
-                <a href="https://www.linkedin.com/in/ritika-rawat-4a671630b"
+                <a href="https://www.linkedin.com/"
                    class="icon brands alt fa-linkedin">
 
                     <span class="label">LinkedIn</span>
