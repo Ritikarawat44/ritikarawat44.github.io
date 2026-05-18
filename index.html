@@ -60,7 +60,7 @@
 
         .main.special {
 
-            background: rgba(255,255,255,0.92);
+            background: rgba(255,255,255,0.95);
         }
 
         /* ============================= */
@@ -73,9 +73,16 @@
 
             line-height: 2;
 
-            color: #4b5563;
+            color: #4b5563 !important;
 
             text-align: center;
+        }
+
+        #one h2,
+        #two h2,
+        #three h2 {
+
+            color: #374151 !important;
         }
 
         /* ============================= */
@@ -91,16 +98,11 @@
 
         .project-box {
 
-            background: rgba(255,255,255,0.08);
+            background: white;
 
             padding: 2rem;
 
             border-radius: 28px;
-
-            backdrop-filter: blur(18px);
-
-            border:
-                1px solid rgba(255,255,255,0.1);
 
             box-shadow:
                 0 10px 30px rgba(0,0,0,0.20);
@@ -133,7 +135,7 @@
 
             line-height: 1.9;
 
-            color: #4b5563;
+            color: #4b5563 !important;
         }
 
         .tech {
@@ -193,27 +195,6 @@
         }
 
         /* ============================= */
-        /* SKILLS */
-        /* ============================= */
-
-        .icons-grid li {
-
-            transition: all 0.4s ease;
-        }
-
-        .icons-grid li:hover {
-
-            transform:
-                scale(1.08)
-                translateY(-5px);
-        }
-
-        .icons-grid .icon {
-
-            color: #38bdf8;
-        }
-
-        /* ============================= */
         /* FOOTER */
         /* ============================= */
 
@@ -239,6 +220,70 @@
         .icons a {
 
             color: #38bdf8 !important;
+        }
+
+        /* ============================= */
+        /* CONTACT FORM */
+        /* ============================= */
+
+        input,
+        textarea {
+
+            background: rgba(255,255,255,0.08) !important;
+
+            border: none !important;
+
+            border-radius: 15px !important;
+
+            color: white !important;
+
+            padding: 15px !important;
+
+            backdrop-filter: blur(10px);
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+
+            color: rgba(255,255,255,0.7);
+        }
+
+        textarea {
+
+            resize: none;
+        }
+
+        #footer .primary {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #34d399,
+                    #38bdf8
+                ) !important;
+
+            border: none !important;
+
+            border-radius: 40px !important;
+
+            padding: 0 40px !important;
+
+            font-weight: 600;
+
+            transition: 0.4s ease;
+        }
+
+        #footer .primary:hover {
+
+            transform:
+                translateY(-5px)
+                scale(1.03);
+        }
+
+        .icons {
+
+            margin-top: 40px;
+            text-align: center;
         }
 
         /* ============================= */
@@ -360,12 +405,6 @@
 
             </header>
 
-            <p>
-
-                Technologies and tools I work with regularly.
-
-            </p>
-
             <ul class="icons-grid">
 
                 <li>
@@ -427,7 +466,7 @@
 
                 <div class="project-box">
 
-                    <h3>🚀 Life-Sync</h3>
+                    <h3>✨ Life-Sync</h3>
 
                     <p>
 
@@ -510,14 +549,63 @@
 
         </header>
 
-        <p style="text-align:center; color:white;">
+        <p style="text-align:center; color:white; margin-bottom:40px;">
 
-            Feel free to connect with me
-            for internships,
-            projects,
-            and collaboration opportunities.
+            Feel free to connect with me for projects,
+            internships, and collaboration opportunities.
 
         </p>
+
+        <form method="post" action="#">
+
+            <div class="row gtr-uniform">
+
+                <div class="col-6 col-12-xsmall">
+
+                    <input type="text"
+                           name="name"
+                           id="name"
+                           placeholder="Name" />
+
+                </div>
+
+                <div class="col-6 col-12-xsmall">
+
+                    <input type="email"
+                           name="email"
+                           id="email"
+                           placeholder="Email" />
+
+                </div>
+
+                <div class="col-12">
+
+                    <textarea name="message"
+                              id="message"
+                              placeholder="Message"
+                              rows="6"></textarea>
+
+                </div>
+
+                <div class="col-12">
+
+                    <ul class="actions special">
+
+                        <li>
+
+                            <input type="submit"
+                                   value="Send Message"
+                                   class="primary" />
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </form>
 
         <ul class="icons">
 
@@ -556,7 +644,7 @@
 
         </ul>
 
-        <div style="text-align:center; margin-top:20px;">
+        <div style="text-align:center; margin-top:20px; color:white;">
 
             <p>&copy; Ritika Rawat</p>
 
