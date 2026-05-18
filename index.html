@@ -38,7 +38,6 @@
             animation: zoomBg 18s ease-in-out infinite alternate;
         }
 
-        /* Background Animation */
         @keyframes zoomBg {
 
             0% {
@@ -51,7 +50,6 @@
 
         }
 
-        /* Main Header */
         #header h1 {
 
             font-size: 5rem;
@@ -65,7 +63,6 @@
             animation: glowText 3s ease-in-out infinite alternate;
         }
 
-        /* Glow Effect */
         @keyframes glowText {
 
             from {
@@ -86,7 +83,6 @@
 
         }
 
-        /* Header Text */
         #header p {
 
             color: rgba(255,255,255,0.9);
@@ -94,7 +90,17 @@
             line-height: 2;
         }
 
-        /* Project Cards */
+        /* ============================= */
+        /* PROJECT SECTION */
+        /* ============================= */
+
+        .projects-section {
+
+            display: grid;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
         .project-box {
 
             background: rgba(255,255,255,0.08);
@@ -102,8 +108,6 @@
             padding: 2rem;
 
             border-radius: 28px;
-
-            margin-bottom: 2rem;
 
             backdrop-filter: blur(18px);
 
@@ -147,7 +151,36 @@
             color: rgba(255,255,255,0.9);
         }
 
-        /* Buttons */
+        .tech {
+
+            display: inline-block;
+
+            margin-top: 15px;
+
+            padding: 8px 16px;
+
+            border-radius: 30px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #38bdf8,
+                    #6366f1
+                );
+
+            color: white;
+
+            font-size: 12px;
+
+            font-weight: 600;
+
+            letter-spacing: 1px;
+        }
+
+        /* ============================= */
+        /* BUTTONS */
+        /* ============================= */
+
         .button.primary {
 
             background:
@@ -177,7 +210,10 @@
                 0 15px 40px rgba(56,189,248,0.5);
         }
 
-        /* Skills */
+        /* ============================= */
+        /* SKILLS */
+        /* ============================= */
+
         .icons-grid li {
 
             transition: all 0.4s ease;
@@ -195,7 +231,6 @@
             color: #38bdf8;
         }
 
-        /* Text */
         .content p {
 
             font-size: 1.1rem;
@@ -205,7 +240,10 @@
             color: rgba(255,255,255,0.9);
         }
 
-        /* Footer */
+        /* ============================= */
+        /* FOOTER */
+        /* ============================= */
+
         #footer {
 
             background:
@@ -216,7 +254,10 @@
                 );
         }
 
-        /* Responsive */
+        /* ============================= */
+        /* RESPONSIVE */
+        /* ============================= */
+
         @media screen and (max-width: 768px) {
 
             #header h1 {
@@ -395,66 +436,73 @@
 
             </header>
 
-            <!-- Project 1 -->
-            <div class="project-box">
+            <section class="projects-section">
 
-                <h3>✨ Life Sync App</h3>
+                <div class="project-box">
 
-                <p>
+                    <h3>🚀 Life-Sync</h3>
 
-                    Smart productivity application built using
-                    Flutter & Firebase featuring OCR Scanner,
-                    AI Insights, Smart Notifications,
-                    and Cloud Integration.
+                    <p>
 
-                </p>
+                        AI-powered Flutter productivity application featuring
+                        OCR scanning, smart notifications, cloud integration,
+                        Firebase backend, and modern UI experience.
 
-            </div>
+                    </p>
 
-            <!-- Project 2 -->
-            <div class="project-box">
+                    <span class="tech">Flutter • Firebase • OCR • AI</span>
 
-                <h3>📊 Student Grade Tracker</h3>
+                </div>
 
-                <p>
+                <div class="project-box">
 
-                    Modern Java GUI application designed for
-                    student performance management
-                    and academic analytics.
+                    <h3>💼 Job Portal</h3>
 
-                </p>
+                    <p>
 
-            </div>
+                        Responsive job portal platform developed with
+                        modern frontend technologies for job searching,
+                        recruitment management, and user interaction.
 
-            <!-- Project 3 -->
-            <div class="project-box">
+                    </p>
 
-                <h3>📈 Stock Trading Platform</h3>
+                    <span class="tech">TypeScript • Web App • UI/UX</span>
 
-                <p>
+                </div>
 
-                    Interactive Java-based stock trading simulator
-                    with market analysis
-                    and portfolio tracking.
+                <div class="project-box">
 
-                </p>
+                    <h3>📊 Student Grade Tracker</h3>
 
-            </div>
+                    <p>
 
-            <!-- Project 4 -->
-            <div class="project-box">
+                        Java GUI based academic management system for
+                        tracking student performance, analytics,
+                        grading records, and progress monitoring.
 
-                <h3>🚗 Car Rental System</h3>
+                    </p>
 
-                <p>
+                    <span class="tech">Java • Swing • GUI</span>
 
-                    Desktop application developed using
-                    Java Swing & JDBC for managing
-                    rentals and bookings.
+                </div>
 
-                </p>
+                <div class="project-box">
 
-            </div>
+                    <h3>🌐 Portfolio Website</h3>
+
+                    <p>
+
+                        Personal portfolio website showcasing projects,
+                        technical skills, certifications, and interactive
+                        modern web design with responsive animations.
+
+                    </p>
+
+                    <span class="tech">HTML • CSS • JavaScript</span>
+
+                </div>
+
+            </section>
 
         </div>
 
