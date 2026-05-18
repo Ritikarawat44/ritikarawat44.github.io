@@ -34,20 +34,6 @@
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-
-            animation: zoomBg 18s ease-in-out infinite alternate;
-        }
-
-        @keyframes zoomBg {
-
-            0% {
-                transform: scale(1);
-            }
-
-            100% {
-                transform: scale(1.08);
-            }
-
         }
 
         #header h1 {
@@ -59,28 +45,6 @@
             text-shadow:
                 0 0 15px rgba(255,255,255,0.3),
                 0 0 35px rgba(56,189,248,0.4);
-
-            animation: glowText 3s ease-in-out infinite alternate;
-        }
-
-        @keyframes glowText {
-
-            from {
-
-                text-shadow:
-                    0 0 10px rgba(255,255,255,0.2),
-                    0 0 20px rgba(56,189,248,0.2);
-
-            }
-
-            to {
-
-                text-shadow:
-                    0 0 25px rgba(255,255,255,0.6),
-                    0 0 45px rgba(56,189,248,0.6);
-
-            }
-
         }
 
         #header p {
@@ -88,6 +52,30 @@
             color: rgba(255,255,255,0.9);
             font-size: 1.3rem;
             line-height: 2;
+        }
+
+        /* ============================= */
+        /* SECTION BACKGROUND */
+        /* ============================= */
+
+        .main.special {
+
+            background: rgba(255,255,255,0.92);
+        }
+
+        /* ============================= */
+        /* ABOUT TEXT */
+        /* ============================= */
+
+        .content p {
+
+            font-size: 1.1rem;
+
+            line-height: 2;
+
+            color: #4b5563;
+
+            text-align: center;
         }
 
         /* ============================= */
@@ -115,7 +103,7 @@
                 1px solid rgba(255,255,255,0.1);
 
             box-shadow:
-                0 10px 30px rgba(0,0,0,0.35);
+                0 10px 30px rgba(0,0,0,0.20);
 
             transition: all 0.4s ease;
         }
@@ -126,11 +114,8 @@
                 translateY(-10px)
                 scale(1.02);
 
-            background:
-                rgba(255,255,255,0.12);
-
             box-shadow:
-                0 20px 50px rgba(0,0,0,0.45);
+                0 20px 50px rgba(0,0,0,0.25);
         }
 
         .project-box h3 {
@@ -148,7 +133,7 @@
 
             line-height: 1.9;
 
-            color: rgba(255,255,255,0.9);
+            color: #4b5563;
         }
 
         .tech {
@@ -205,9 +190,6 @@
             transform:
                 translateY(-6px)
                 scale(1.03);
-
-            box-shadow:
-                0 15px 40px rgba(56,189,248,0.5);
         }
 
         /* ============================= */
@@ -231,15 +213,6 @@
             color: #38bdf8;
         }
 
-        .content p {
-
-            font-size: 1.1rem;
-
-            line-height: 2;
-
-            color: rgba(255,255,255,0.9);
-        }
-
         /* ============================= */
         /* FOOTER */
         /* ============================= */
@@ -252,6 +225,20 @@
                     #0f172a,
                     #111827
                 );
+
+            color: white;
+        }
+
+        #footer h2,
+        #footer p,
+        #footer div {
+
+            color: white;
+        }
+
+        .icons a {
+
+            color: #38bdf8 !important;
         }
 
         /* ============================= */
@@ -523,7 +510,7 @@
 
         </header>
 
-        <p style="text-align:center;">
+        <p style="text-align:center; color:white;">
 
             Feel free to connect with me
             for internships,
@@ -569,13 +556,13 @@
 
         </ul>
 
-        <ul class="copyright">
+        <div style="text-align:center; margin-top:20px;">
 
-            <li>&copy; Ritika Rawat</li>
+            <p>&copy; Ritika Rawat</p>
 
-            <li>Modern Interactive Portfolio</li>
+            <p>Modern Interactive Portfolio</p>
 
-        </ul>
+        </div>
 
     </div>
 
