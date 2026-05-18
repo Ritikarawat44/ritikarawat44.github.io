@@ -19,7 +19,6 @@
         /* ============================= */
 
         body {
-
             background: #020617;
         }
 
@@ -80,8 +79,8 @@
             background:
                 linear-gradient(
                     135deg,
-                    rgba(255,255,255,0.96),
-                    rgba(248,250,252,0.96)
+                    #f8fafc,
+                    #e2e8f0
                 );
         }
 
@@ -218,55 +217,67 @@
 
         #footer {
 
-            background:
-                linear-gradient(
-                    135deg,
-                    #020617,
-                    #0f172a
-                ) !important;
+    background:
+        linear-gradient(
+            135deg,
+            #020617,
+            #0f172a
+        ) !important;
+            color: #ffffff !important;
 
-            color: white;
+            padding-top: 80px;
         }
 
         #footer h2 {
 
-            color: white !important;
+            color: #ffffff !important;
+
+            font-size: 3rem;
+
+            letter-spacing: 4px;
         }
 
         #footer p {
 
-            color: rgba(255,255,255,0.88) !important;
+            color: #f8fafc !important;
+
+            opacity: 1 !important;
+
+            font-size: 1.1rem;
         }
 
         /* ============================= */
         /* CONTACT FORM */
         /* ============================= */
 
-        input,
-        textarea {
+       #footer input,
+#footer textarea {
 
-            background: rgba(255,255,255,0.15) !important;
+    background: rgba(255,255,255,0.20) !important;
 
-            border: 1px solid rgba(255,255,255,0.15) !important;
+            border: 1px solid rgba(255,255,255,0.2) !important;
 
             border-radius: 15px !important;
 
-            color: white !important;
+            color: #ffffff !important;
 
             padding: 15px !important;
 
-            backdrop-filter: blur(10px);
+            font-size: 1rem !important;
 
-            font-size: 1rem;
+            opacity: 1 !important;
+
+            box-shadow: none !important;
+        }
+    #footer input::placeholder,
+    #footer textarea::placeholder {
+
+    color: rgba(255,255,255,0.95) !important;
+
+            opacity: 1 !important;
         }
 
-        input::placeholder,
-        textarea::placeholder {
-
-            color: rgba(255,255,255,0.8);
-        }
-
-        textarea {
+        #footer textarea {
 
             resize: none;
         }
@@ -276,11 +287,15 @@
 
             border: 1px solid #38bdf8 !important;
 
-            box-shadow:
-                0 0 15px rgba(56,189,248,0.4);
+            background: rgba(255,255,255,0.18) !important;
 
-            background: rgba(255,255,255,0.20) !important;
+            box-shadow:
+                0 0 15px rgba(56,189,248,0.5) !important;
         }
+
+        /* ============================= */
+        /* BUTTON */
+        /* ============================= */
 
         #footer .primary {
 
@@ -297,9 +312,11 @@
 
             padding: 0 40px !important;
 
+            color: white !important;
+
             font-weight: 600;
 
-            color: white !important;
+            opacity: 1 !important;
 
             transition: 0.4s ease;
         }
@@ -326,6 +343,8 @@
 
             color: #38bdf8 !important;
 
+            opacity: 1 !important;
+
             font-size: 1.8rem;
 
             margin: 0 10px;
@@ -338,6 +357,48 @@
             color: #ffffff !important;
 
             transform: scale(1.2);
+        }
+
+        /* ============================= */
+        /* FINAL VISIBILITY FIX */
+        /* ============================= */
+
+        #footer,
+        #footer .container,
+        #footer .content,
+        #footer header,
+        #footer form,
+        #footer p,
+        #footer h2,
+        #footer input,
+        #footer textarea,
+        #footer .actions,
+        #footer .icons,
+        #footer li,
+        #footer a {
+
+            opacity: 1 !important;
+        }
+
+        #footer p,
+        #footer label,
+        #footer h2 {
+
+            color: #ffffff !important;
+        }
+
+        #footer input,
+        #footer textarea {
+
+            color: #ffffff !important;
+
+            background: rgba(255,255,255,0.12) !important;
+        }
+
+        #footer input::placeholder,
+        #footer textarea::placeholder {
+
+            color: rgba(255,255,255,0.7) !important;
         }
 
         /* ============================= */
